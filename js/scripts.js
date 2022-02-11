@@ -1,0 +1,21 @@
+$(document).ready(function(){
+	$('.lang__title').click(function(event){
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+	$('.country-profile__title').click(function(event){
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+	$('.team__title').click(function(event){
+		$(this).toggleClass('active').next().slideToggle(300);
+	});
+	$('.international-service__slider').slick({
+		initialSlide:0,
+		infinite:true,
+		autoplay:true,
+		autoplaySpeed:500,
+		pauseOnFocus:false,
+		pauseOnDotsHover:false,
+		pauseOnDotsHover:true,
+		draggable:false,
+		});
+});
